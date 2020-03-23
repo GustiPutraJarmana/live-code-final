@@ -8,8 +8,8 @@ module.exports = (sequelize, DataTypes) => {
     UserId: DataTypes.INTEGER
   },{sequelize})
   Report.associate = function(models) {
-    Report.belongTo(models.User)
-    Report.belongTo(models.Country)
+    Report.belongsTo(models.User)
+    Report.belongsTo(models.Country)
   };
   return Report;
 };
